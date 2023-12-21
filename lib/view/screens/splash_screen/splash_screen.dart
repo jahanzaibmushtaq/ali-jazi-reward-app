@@ -1,6 +1,7 @@
 
 import 'package:al_jazi_reward_app/consts/consts.dart';
 import 'package:al_jazi_reward_app/view/screens/custom_widgets/rounded_button.dart';
+import 'package:al_jazi_reward_app/view/sign_up_screen/sign_up_phone_no.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -79,7 +80,9 @@ class _SplashScreenState extends State<SplashScreen> {
                          title: splButtonName,
                          textColor: Colors.white,
                          buttonColor: Colors.greenAccent,
-                         onPress: () {}),
+                         onPress: () {
+                           Get.to(()=>SignUpWithPhoneNo());
+                         }),
                      const SizedBox(
                        height: 20,
                      ),
